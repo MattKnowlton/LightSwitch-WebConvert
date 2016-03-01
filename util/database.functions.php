@@ -1,5 +1,4 @@
 <?php
-require_once('rdb.class.php');
 
 function distinctOptions($table, $field, $where = []){
     global $dbConn;
