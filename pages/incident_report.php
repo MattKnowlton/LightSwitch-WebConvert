@@ -27,6 +27,7 @@
 
                     </div>
                     <?php include('incidentContact.form.php'); ?>
+                    <?php include('incidentPolice.form.php'); ?>
                 </div>
             </td>
             <td style="padding:10px; width:30%;">

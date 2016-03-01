@@ -22,9 +22,11 @@
     #formContact{
         width: 100%;
     }
-</style>
 
-<br/>
+    #formContact tr td:nth-child(1), #formContact tr td:nth-child(3){
+        width: 105px;
+    }
+</style>
 
 <fieldset style="margin:8px; border:1px solid #476971; border-radius: 6px; ">
     <legend style="font-size:14px; font-weight:bold;">
@@ -36,8 +38,8 @@
             <td>
                 Contact Type:
             </td>
-            <td>
-                <select>
+            <td colspan="3">
+                <select name="contact[contact_type]">
                     <option>Witness</option>
                 </select>
             </td>
@@ -47,13 +49,13 @@
                 First Name:
             </td>
             <td>
-                <input>
+                <input name="contact[first_name]">
             </td>
             <td>
                 Last Name:
             </td>
             <td>
-                <input>
+                <input name="contact[last_name]">
             </td>
         </tr>
         <tr>
@@ -61,13 +63,13 @@
                 Phone 1:
             </td>
             <td>
-                <input>
+                <input class="phoneNum" name="contact[phone_1]">
             </td>
             <td>
                 Phone 2:
             </td>
             <td>
-                <input>
+                <input class="phoneNum" name="contact[phone_2]">
             </td>
         </tr>
         <tr>
@@ -75,7 +77,7 @@
                 Address 1:
             </td>
             <td colspan="3">
-                <input>
+                <input name="contact[address_1]">
             </td>
         </tr>
         <tr>
@@ -83,7 +85,7 @@
                 Address 2:
             </td>
             <td colspan="3">
-                <input>
+                <input name="contact[address_2]">
             </td>
         </tr>
         <tr>
@@ -91,16 +93,14 @@
                 Zip Code:
             </td>
             <td>
-                <input>
+                <input name="contact[zip_code]">
             </td>
             <td>
                 Email Address:
             </td>
             <td>
-                <input>
+                <input class="emailAddr" name="contact[email]">
             </td>
         </tr>
     </table>
-
-    <br/>
 </fieldset>

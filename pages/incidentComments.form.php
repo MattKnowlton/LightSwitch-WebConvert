@@ -14,19 +14,23 @@
 <div id="incidentCommments">
     <b>Description:</b>
     <br/>
-    <textarea></textarea>
+    <textarea name="description"></textarea>
 
     <br/><br/>
 
     <b>Employee Action Taken:</b>
     <br/>
-    <textarea></textarea>
+    <textarea name="employee_action"></textarea>
 
     <br/><br/>
 
     <b>Office Action Taken:</b>
     <br/>
-    <textarea></textarea>
+    <textarea name="office_action"></textarea>
 
     <br/><br/>
+
+    <b>Incident Photo:</b><input type="file" accept="image/*" capture="camera"/>
+    <br/>
+    <div style="width:170px;height: 100px; border:1px solid black;"></div>
 </div>

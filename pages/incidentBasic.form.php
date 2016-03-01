@@ -20,7 +20,7 @@
             <b>Location:</b>
         </td>
         <td>
-            <select>
+            <select name="location">
                 <option>SPEEDY'S OFFICE</option>
             </select>
         </td>
@@ -28,7 +28,7 @@
             <b>Employee:</b>
         </td>
         <td>
-            <select>
+            <select name="employee">
                 <option>Matt Knowlton</option>
             </select>
         </td>
@@ -38,13 +38,13 @@
             <b>Date / Time:</b>
         </td>
         <td>
-            <input >
+            <input name="incident_date">
         </td>
         <td>
             <b>Incident Type:</b>
         </td>
         <td>
-            <select>
+            <select name="incident_type">
                 <option>NONE</option>
             </select>
         </td>
@@ -54,7 +54,7 @@
             <b>Status:</b>
         </td>
         <td>
-            <select>
+            <select name="status">
                 <option>Open</option>
             </select>
         </td>
@@ -62,19 +62,21 @@
             Reported On:
         </td>
         <td>
-            <select>
+            <select name="reported_on">
                 <option>Store Clerk</option>
             </select>
         </td>
     </tr>
     <tr>
         <td colspan="2">
-            No contact acquired:&nbsp;
-            <input type="checkbox" />
+            No contact acquired:&nbsp
+            <input type="hidden" name="contact_acquired" value="0" />
+            <input type="checkbox" name="contact_acquired" value="1" />
         </td>
         <td></td>
         <td>
-            <input type="checkbox" />
+            <input type="hidden" name="high_priority" value="0" />
+            <input type="checkbox" name="high_priority" value="1" />
             High Priority
         </td>
     </tr>
